@@ -1,14 +1,16 @@
-<main class="page">
-	<div>
-		<h1>Welcome to Movies</h1>
-		<p>Here you can find all the movies you want</p>
+<script>
+	import hero from '$lib/assets/hero-img.jpg';
+</script>
 
-		<a href="/movies"> Go to movies </a>
-	</div>
+<main>
+	<div class="hero bg-cover bg-center" style:background-image="url({hero})" />
 </main>
 
 <style>
-	.page {
+	.hero {
 		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>

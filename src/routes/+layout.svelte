@@ -43,13 +43,23 @@
 </footer>
 
 <style>
+	header {
+		position: sticky;
+		top: 0px;
+		width: 100%;
+	}
 	.header {
-		background-color: #f1f1f1;
+		background-color: #993559;
 		padding: 20px;
-		border-bottom: 0.1rem solid #ccc;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+	.header a {
+		color: #f1f1f1;
+	}
+	footer {
+		width: 100%;
 	}
 	.footer {
 		background-color: #f1f1f1;
