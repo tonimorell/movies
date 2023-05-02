@@ -11,17 +11,21 @@ const options = {
   }
 }
 
-export async function load({ fetch }) {
-  const URL = 'https://streaming-availability.p.rapidapi.com/v2/search/basic?country=us&services=netflix%2Cprime.buy%2Chulu.addon.hbo%2Cpeacock.free&output_language=en&show_type=movie&genre=18&show_original_language=en&keyword=zombie'
+export async function load({ fetch, url }) {
+  return {
+    movies: getMoviesByKeyword(url.searchParams.get('keyword'), fetch),
+  };
+}
+
+const getMoviesByKeyword = async (keyword, fetch) => {
+  const URL = `https://streaming-availability.p.rapidapi.com/v2/search/basic?country=us&services=netflix%2Cprime.buy%2Chulu.addon.hbo%2Cpeacock.free&output_language=en&show_type=movie&genre=18&show_original_language=en&keyword=${keyword}`
   return fetch(URL, options)
     .then(response => response.json())
     .then(response => {
       if (response.error) {
         throw new Error(response.error);
       }
-      return {
-        movies: response.result
-      };
+      return response.result
     })
     .catch(err => {
       throw error(500, err.message);

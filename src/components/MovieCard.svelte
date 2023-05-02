@@ -27,6 +27,7 @@
 		margin: 0 auto;
 		border: 1px solid #ccc;
 		border-radius: 4px;
+		background-color: #fefefe;
 	}
 	.poster {
 		max-width: 100%;
