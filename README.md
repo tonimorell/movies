@@ -1,3 +1,12 @@
+# Documentación
+
+- Documentación sober la web, JavaScript, CSS, HTML, ... [mdn](https://developer.mozilla.org/es/)
+- Documentación de la librería [Svelte](https://svelte.dev/docs)
+- Documentación del framework [SvelteKit](https://kit.svelte.dev/docs/introduction)
+- Documentación de [Tailwindcss](https://tailwindcss.com/docs/installation)
+- Documentación del entorno de desarrollo [Vite](https://vitejs.dev/guide/)
+- Documentación de servicio [Vercel](https://vercel.com/docs) para desplegar aplicaciones web
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
