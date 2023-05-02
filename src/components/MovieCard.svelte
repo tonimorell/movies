@@ -5,13 +5,25 @@
 <div class="card">
 	<h2>{movie.title}</h2>
 	<img class="poster" src={movie.posterURLs[780]} alt={movie.title} />
-	<div class="description">
+	<div class="w-full overflow-hidden">
 		<span>Description: </span>
-		<p>{movie.overview}</p>
+		<p class="h-24 ml-2 overflow-auto">{movie.overview}</p>
 	</div>
-	<div>
+	<div class="w-full flex justify-start">
+		<span>Year: </span>
+		<p class="ml-2">{movie.year}</p>
+	</div>
+	<div class="w-full flex justify-start">
 		<span>Directors: </span>
-		<p>{movie.directors.join(', ')}</p>
+		<p class="ml-2">{movie.directors.join(', ')}</p>
+	</div>
+	<div class="w-full flex justify-start">
+		<span>Runtime: </span>
+		<p class="ml-2">{movie.runtime}</p>
+	</div>
+	<div class="w-full flex justify-start">
+		<span>IMDB: </span>
+		<p class="ml-2">{movie.imdbRating}</p>
 	</div>
 </div>
 
@@ -23,7 +35,7 @@
 		justify-content: flex-start;
 		padding: 1em;
 		max-width: 300px;
-		max-height: 700px;
+		max-height: 800px;
 		margin: 0 auto;
 		border: 1px solid #ccc;
 		border-radius: 4px;
@@ -31,16 +43,6 @@
 	}
 	.poster {
 		max-height: 400px;
-	}
-	.description {
-		margin-bottom: 1rem;
-		width: 100%;
-		height: 150px;
-		overflow: hidden;
-	}
-	.description p {
-		height: 120px;
-		text-overflow: ellipsis;
 	}
 	span {
 		font-weight: bold;

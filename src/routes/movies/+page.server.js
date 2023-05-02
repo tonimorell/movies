@@ -25,6 +25,7 @@ const getMoviesByKeyword = async (keyword, fetch) => {
       if (response.error) {
         throw new Error(response.error);
       }
+      console.log(response.result);
       return response.result
     })
     .catch(err => {
