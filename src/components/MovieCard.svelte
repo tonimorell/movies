@@ -22,16 +22,15 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		padding: 1em;
-		max-width: 30em;
-		max-height: 50em;
+		max-width: 300px;
+		max-height: 700px;
 		margin: 0 auto;
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		background-color: #fefefe;
 	}
 	.poster {
-		max-width: 100%;
-		max-height: 100%;
+		max-height: 400px;
 	}
 	.description {
 		margin-bottom: 1rem;
